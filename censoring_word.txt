@@ -1,0 +1,15 @@
+def censor(text,word):
+    unit=[]
+    new=[]
+    text=str(text)
+    word=str(word)
+    new=text.split()
+    print new
+    for index,item in enumerate(new):
+        if item==word:
+            new[index]=("*"*(len(word)))
+    print item
+    a=" ".join(new)
+    print a
+    return a
+censor("hey aim sahil aim", "aim")

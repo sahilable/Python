@@ -1,0 +1,6 @@
+def purify(x):
+    new=[]
+    for items in x:
+        if items%2==0:
+          new.append(items)
+    return new

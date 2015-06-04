@@ -1,0 +1,27 @@
+def count(sequence,item):
+    times=0
+    if type(item) is list:
+        for new in sequence:
+            for lis in item:
+                if new==lis:
+                    times+=1
+        print times
+        return times
+    elif type(item) is int:
+            for new in sequence:
+                if new==int(item):
+                    times=times+1
+            print times
+            return times
+    elif type(item) is float:
+            for new in sequence:
+                if new==float(item):
+                    times=times+1
+            print times
+            return times
+    elif type(item) is str:
+            for new in sequence:
+                if new==str(item):
+                    times=times+1
+            print times
+            return times

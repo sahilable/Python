@@ -1,0 +1,11 @@
+def anti_vowel(text):
+    text=str(text)
+    unit=[]
+    for item in text:
+        unit.append(item)
+    for index,to in enumerate(unit):
+        if to=="a" or to=="e" or to=="i" or to=="o" or to=="u" or to=="A" or to=="E" or to=="I" or to=="O" or to=="U":
+            unit[index]=""
+    a=''.join(unit)
+    return a
+anti_vowel("Sahil")

@@ -1,0 +1,31 @@
+def median(x):
+    z=sorted(x)
+    print len(z)
+    if len(z)%2==0:
+        index1=int((len(z)/2)-1)
+        index2=int(index1+1)
+        med=(z[index1]+z[index2])/float(2)
+        print med
+        return med
+    if (len(z)%2)!=0:
+        index=len(z)/2
+        med=z[index]
+        return med
+    if (len(z))==1:
+        med=1
+        return med
+    
+median([4,5,5,4])
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
